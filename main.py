@@ -25,9 +25,9 @@ replace = input("Enter Name For New File: ")
 result = name.split('.')
 
 #Calling Functions
-if result[1] == "jpg":
+if result[-1] == "jpg":
     jpg_png(name, replace)
-elif result[1] == "png":
+elif result[-1] == "png":
     png_jpg(name, replace)
 else:
     print("Unknown File")
