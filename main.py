@@ -1,14 +1,14 @@
 #Imports
 from PIL import Image
 import os
+import re
 from termcolor import colored
 
 
-
+#Header
 print(colored("### Developed And Maintained By Isath Nenuka ###", "green"))
-
-
 print(colored("Only JPG to PNG And Vice versa Are Supported For Now.", "red"))
+
 
 #Convert PNG to JPG
 def png_jpg(name , replace):
@@ -28,7 +28,6 @@ for files in dir:
 #User Inputs
 name = input("Enter File Name "+ colored("(With Extension) :" , "blue"))
 replace = input("Enter Name For New File " + colored("(Without Extension) :" , "blue"))
-
 result = name.split('.')
 
 #Calling Functions
