@@ -12,13 +12,13 @@ print(colored("Only JPG to PNG And Vice versa Are Supported For Now.", "red"))
 
 #Convert PNG to JPG
 def png_jpg(name , replace):
-    im1 = Image.open(name)
-    im1.save(replace + ".jpg") 
+    img = Image.open(name)
+    img.save(replace + ".jpg") 
 
 #Convert JPG to PNG
 def jpg_png(name , replace):
-    im1 = Image.open(name)
-    im1.save(replace + '.png') 
+    img = Image.open(name)
+    img.save(replace + '.png') 
 
 #List Directories
 dir = os.listdir()
